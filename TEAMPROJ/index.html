@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        background-color: #dbbc96;
+        text-align: center;
+        padding: 1rem;
+      }
+      nav {
+        position: sticky;
+        background-color: #e08413;
+        color: black;
+        display: flex;
+        flex-direction: column;
+      }
+      nav ul {
+        list-style: none;
+        flex: 1;
+      }
+      nav li {
+        padding: 12px 16px;
+        margin: 0 5px;
+        white-space: nowrap;
+      }
+      nav li:hover {
+        cursor: pointer;
+      }
+      section {
+        display: flex;
+
+        flex-wrap: wrap;
+      }
+      section div {
+        flex: 1;
+        height: 100vh;
+        margin: 10px;
+        background-color: white;
+      }
+      section div:nth-of-type(1) {
+        background-color: red;
+        width: 50%;
+      }
+      section div:nth-of-type(2) {
+        background-color: red;
+        width: 50%;
+      }
+      footer {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>PET</h1>
+      <nav>
+        <ul>
+          <li>조류</li>
+          <li>어류</li>
+          <li>파충류</li>
+          <li>포유류</li>
+          <li>설치류</li>
+        </ul>
+      </nav>
+      <section>
+        <div>ddd</div>
+        <div>ddd</div>
+      </section>
+    </header>
+    <footer>
+      <address>CopyRight &copy; 고객센터 000-000-0000</address>
+    </footer>
+  </body>
+</html>
