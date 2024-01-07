@@ -1,4 +1,4 @@
-const main_nav = document.querySelector("nav_main_nav");
+const main_nav = document.querySelector("nav.main_nav");
 
 main_nav.addEventListener("click", (event) => {
   const target = event.target;
@@ -8,7 +8,7 @@ main_nav.addEventListener("click", (event) => {
     if (nav_text === "홈") {
       document.location.href = "./index.html";
     } else if (nav_text === "어류") {
-      importHTML(img_container, "fish.html");
+      importHTML(img_container, "./fish.html");
     }
   }
 });
