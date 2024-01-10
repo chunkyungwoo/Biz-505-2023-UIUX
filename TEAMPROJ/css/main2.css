@@ -11,7 +11,15 @@ html {
 body {
   height: 100%;
   display: flex;
-  background-image: url("../images/sea.jpg");
+  flex-direction: column;
+}
+header {
+  text-align: center;
+  padding: 1.2rem;
+  background-color: #56c8f2;
+  width: 100%;
+  color: #0d0dc3;
+  font-size: large;
 }
 section {
   flex: 1;
@@ -27,4 +35,17 @@ section div a {
   text-align: center;
   font-size: large;
   display: inline-block;
+}
+.image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.image {
+  cursor: pointer;
+  width: 200px;
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
 }

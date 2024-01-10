@@ -1,0 +1,18 @@
+header {
+  text-align: center;
+}
+section.detail {
+  display: flex;
+  flex-direction: column;
+}
+section.detail > div {
+  display: flex;
+  border: 1px solid blue;
+  margin: 3px;
+}
+section.detail > div ul {
+  list-style: circle;
+}
+p.comment {
+  margin: 5px 12px;
+}
