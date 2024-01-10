@@ -23,13 +23,12 @@ header {
 }
 section {
   flex: 1;
+  display: flex;
 }
 section div {
   display: flex;
   flex-direction: column;
   width: 60%;
-  padding: 15px;
-  margin: 20px;
 }
 section div a {
   text-align: center;
@@ -37,15 +36,25 @@ section div a {
   display: inline-block;
 }
 .image-box {
+  background-image: url(../images/sea.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  flex: 1;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-box img {
+  width: 100%;
+  border-radius: 30%;
 }
 .image {
   cursor: pointer;
   width: 200px;
   top: 50%;
-  transform: translate(0, -50%);
-  position: absolute;
+}
+div.image {
+  display: flex;
 }

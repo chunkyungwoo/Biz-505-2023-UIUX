@@ -11,6 +11,14 @@ const img_container_click_handler = (event) => {
   if (tag_name === IMG_TAG_NAME) {
     const alt_text = target.getAttribute("alt");
     if (alt_text === ALT_TEXT.금붕어사진) {
+      // importHTML(img_container, "./gold.html");
+      window.location.href = "./gold.html";
+    } else if (alt_text === ALT_TEXT.구피사진) {
+      // importHTML(img_container, "./9p.html");
+      window.location.href = "./9p.html";
+    } else if (alt_text === ALT_TEXT.네온테트라사진) {
+      window.location.href = "./neon.html";
+      // importHTML(img_container, "./neon.html");
     }
   }
 };

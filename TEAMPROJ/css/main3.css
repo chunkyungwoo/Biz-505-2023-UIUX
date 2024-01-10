@@ -1,4 +1,22 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  height: 100vh;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/sea.jpg);
+  background-size: cover;
+}
 header {
+  padding: 1.2rem;
+  background-color: #199191;
   text-align: center;
 }
 section.detail {
@@ -13,6 +31,7 @@ section.detail > div {
 section.detail > div ul {
   list-style: circle;
 }
+
 p.comment {
   margin: 5px 12px;
 }
