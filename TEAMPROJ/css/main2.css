@@ -15,46 +15,52 @@ body {
 }
 header {
   text-align: center;
-  padding: 1.2rem;
-  background-color: #56c8f2;
+  padding: 5rem;
+  background-image: url(../images/어항2.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  color: #0d0dc3;
+  color: white;
   font-size: large;
 }
-section {
-  flex: 1;
+section.img_container {
+  flex-wrap: wrap;
   display: flex;
+  background-repeat: repeat;
 }
-section div {
+section.img_container div {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  padding: 15px;
 }
-section div a {
-  text-align: center;
-  font-size: large;
+section.img_container img {
+  display: flex;
+  width: 300px;
+  border-radius: 15px;
+  transition: 0.7s;
+}
+section.img_container img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+section.img_container a {
   display: inline-block;
+  text-align: center;
+  padding: 3px;
+  color: #09292e;
+  font-weight: 900;
+  transition: 0.7s;
+}
+section.img_container a:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 .image-box {
   background-image: url(../images/sea.jpg);
+
   display: flex;
   align-items: center;
-  justify-content: center;
   position: relative;
   flex: 1;
-  border: 1px solid black;
-  background-repeat: no-repeat;
   background-size: cover;
-}
-.image-box img {
-  width: 100%;
-  border-radius: 30%;
-}
-.image {
-  cursor: pointer;
-  width: 200px;
-  top: 50%;
-}
-div.image {
-  display: flex;
 }
