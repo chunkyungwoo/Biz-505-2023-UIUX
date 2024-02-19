@@ -57,10 +57,11 @@ section.img_container a:hover {
 }
 .image-box {
   background-image: url(../images/sea.jpg);
-
   display: flex;
   align-items: center;
   position: relative;
   flex: 1;
   background-size: cover;
+  border: 1px solid transparent;
+  background-attachment: fixed;
 }
